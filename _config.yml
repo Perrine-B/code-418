@@ -7,7 +7,7 @@ defaults:
       path: ""
       type: "categories"
     values:
-      layout: "categories"
+      layout: "categorie"
   - scope:
       path: ""
       type: "posts"

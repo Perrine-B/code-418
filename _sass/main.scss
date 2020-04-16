@@ -1,4 +1,94 @@
-.current {
-    color: teal;
+
+// General Reset
+
+html {
+    margin: 0;
+    padding: 0;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    margin: 1em;
+}
+
+//Header
+
+.header {
+    background-color: black;
+    height: 7em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px dashed white;
+    img {
+        height: 8em;
+        padding: 1em;
+    }
+}
+
+.nav {
+    margin-bottom: -0.1em;
+    padding-top: 0.5em;
+    border-radius: 1em 1em 0 0;
+    background-color: white;
+    border: 2px dashed black;
+    border-bottom: none;
+    color: black;
+    &-link {
+        color: black;
+        text-decoration: none;
+        margin: 1em;
+        &:hover{
+            border-bottom: 2px dashed teal;
+        }
+       
+    }
+    &-link-active {
+        margin: 1em;
+        text-decoration: none;
+        color: teal;
+    }
+   
+}
+
+
+//TODO Organize et split CSS - Gonna be a mess soon
+
+//Home 
+
+.welcome {
+    h1 {
+        padding: 0.5em;
+    }
+}
+
+.home {
+    padding: 2em;
+    margin-top: 3em;
+    display: flex;
+    flex-wrap: wrap;
+    .home-gif {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 35%;
+        
+    }
+    .side-box {
+        margin-left: 1.5em;
+        width: 50%;
+        h2 {
+            text-transform: uppercase;
+        }
+        section {
+            margin: 2em 0 2em 0;
+        }
+    }
+    
+
+}

@@ -1,16 +1,49 @@
---- 
+---
 title: Home
 ---
-
+<div class='welcome'>
 <h1>Welcome !!</h1>
-<img src="/assets//images/hello.gif" alt="hello">
+</div>
+<!-- worst name of classes ever - to change in all that doc -->
+<!-- Beggining of the 'Play with flexbox area' -->
+<div class='home'>
 
+    <!-- Cute GIF area' -->
+    <section class='home-gif'>
+        <img src="/assets//images/hello.gif" alt="hello">
+    </section>
+    <!-- End Cute GIF area' -->
 
-<ul>
-    {% for categories in site.categories %}
-      <li>
-        <h2><a href="{{ categories.url}}">{{ categories.name }}</a></h2>
-        <p>{{ categories.content | markdownify }}</p>
-      </li>
-    {% endfor %}
-  </ul>
+    <!-- Links boxes area' -->
+    <div class='side-box'>
+        <!-- Lastest posts area' -->
+        <section>
+            <h2>Latest posts</h2>
+            <ul>
+                {% for post in site.posts %}
+                <li>
+                    <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+                    {{ post.excerpt }}
+                </li>
+                {% endfor %}
+            </ul>
+
+        </section class='link-box'>
+        <!-- End Lastest posts area' -->
+        <!-- Links by categories area' -->
+        <section class='link-box'>
+            <h2>Categories</h2>
+            <ul>
+                {% for categories in site.categories %}
+                <li>
+                    <h3><a href="{{ categories.url}}">{{ categories.name }}</a></h3>
+                    <p>{{ categories.content | markdownify }}</p>
+                </li>
+                {% endfor %}
+            </ul>
+        </section>
+        <!-- End Links by categories area' -->
+    </div>
+    <!-- End Links boxes area' -->
+</div>
+<!-- End of the 'Play with flexbox area' -->
