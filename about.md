@@ -1,6 +1,5 @@
 ---
 title: Une page about
-layout: default
 ---
 
 
@@ -10,3 +9,4 @@ layout: default
 - I like cats
 - I like cakes
 - I like that method
+

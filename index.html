@@ -1,7 +1,16 @@
----
-title: Un super titre 
-layout : default
+--- 
+title: Home
 ---
 
 <h1>Welcome !!</h1>
 <img src="/assets//images/hello.gif" alt="hello">
+
+
+<ul>
+    {% for categories in site.categories %}
+      <li>
+        <h2><a href="{{ categories.url}}">{{ categories.name }}</a></h2>
+        <p>{{ categories.content | markdownify }}</p>
+      </li>
+    {% endfor %}
+  </ul>

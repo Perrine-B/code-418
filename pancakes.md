@@ -1,6 +1,5 @@
 ---
 title: Best pancakes ever
-layout: default
 ---
 
 # Best Pancakes ever
